@@ -425,6 +425,9 @@ body {
   margin-right: 0;
   padding: 0;
 }
+.footer-first {
+  width: 231px;
+}
 .footer-list {
   margin-top: 20px;
 }
@@ -486,7 +489,8 @@ body {
   margin-bottom: 20px;
 }
 .footer-forms {
-  margin-left: 93px;
+  margin-left: auto;
+  margin-right: 0;
   padding-top: 12px;
 }
 .footer-form-section {
@@ -509,7 +513,6 @@ body {
 .footer-btn {
   width: 200px;
   height: 50px;
-  margin: auto;
   background-color: var(--current-color);
   font-weight: 700;
   font-size: 16px;
