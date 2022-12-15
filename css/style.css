@@ -524,10 +524,8 @@ body {
 .footer-btn:active {
   background: var(--accent-color);
 }
-.footer-send-icon {
-  display: flex;
-  margin-left: 10px;
-  fill: var(--second-color);
+.form-btn-text {
+  margin-right: 10px;
 }
 
 /* PORTFOLIO-HERO */
