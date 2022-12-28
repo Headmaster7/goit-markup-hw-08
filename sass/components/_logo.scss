@@ -9,12 +9,12 @@
     padding: 24px 0 25px 0;
     margin-right: 93px;
     color: var(--link-color);
-}
 
-.logo__header-part {
-    color: var(--theme-logo);
-}
+    &__header-part {
+        color: var(--theme-logo);
+    }
 
-.logo__footer-part {
-    color: var(--second-color);
+    &__footer-part {
+        color: var(--second-color);
+    }
 }
