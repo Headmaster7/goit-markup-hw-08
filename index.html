@@ -110,15 +110,18 @@
                 <h2 class="ourjob__title">Чим ми займаємося</h2>
                 <ul class="ourjob__list list">
                     <li class="ourjob__img">
-                        <img src="./img/box_1.jpg" alt="Моя робота" width="370" height="294" />
+                        <img srcset="./img/box_1.jpg 1x, ./img/box_1-2x.jpg 2x" src="./img/box_1.jpg" alt="Моя робота"
+                            width="370" />
                         <p class="ourjob__label">Десктопні додатки</p>
                     </li>
                     <li class="ourjob__img">
-                        <img src="./img/box_2.jpg" alt="Моя робота" width="370" height="294" />
+                        <img srcset="./img/box_2.jpg 1x, ./img/box_2-2x.jpg 2x" src="./img/box_2.jpg" alt="Моя робота"
+                            width="370" />
                         <p class="ourjob__label">Мобільні додатки</p>
                     </li>
                     <li class="ourjob__img">
-                        <img src="./img/box_3.jpg" alt="Моя робота" width="370" height="294" />
+                        <img srcset="./img/box_3.jpg 1x, ./img/box_3-2x.jpg 2x" src="./img/box_3.jpg" alt="Моя робота"
+                            width="370" />
                         <p class="ourjob__label">Дизайнерські рішення</p>
                     </li>
                 </ul>
@@ -129,128 +132,160 @@
                 <h2 class="ourteam__head">Наша команда</h2>
                 <ul class="ourteam__list list">
                     <li class="ourteam__card">
-                        <img src="./img/player_1.jpg" alt="Член команди" width="270" height="260" />
-                        <div class="container">
-                            <h3 class="ourteam__name">Ігор Дем'яненко</h3>
-                            <p class="ourteam__profi">Product Designer</p>
-                            <ul class="ourteam__soc-list list">
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a></li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="./img/player_1.jpg 1x,
+                                       ./img/player_1-2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/player_1-tab.jpg 1x,
+                                       ./img/player_1-tab-2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/player_1-mob.jpg 1x,
+                                       ./img/player_1-mob-2x.jpg 2x" media="(min-width:480px)">
+                            <img srcset="./img/player_1.jpg 1x, 
+                                      ./img/player_1-2x.jpg 2x" src="./img/player_1.jpg" alt="Член команди"
+                                width="270">
+                        </picture>
+                        <h3 class="ourteam__name">Ігор Дем'яненко</h3>
+                        <p class="ourteam__profi">Product Designer</p>
+                        <ul class="ourteam__soc-list list">
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a></li>
+                        </ul>
                     </li>
                     <li class="ourteam__card">
-                        <img src="./img/player_2.jpg" alt="Член команди" width="270" height="260" />
-                        <div class="container">
-                            <h3 class="ourteam__name">Ольга Рєпіна</h3>
-                            <p class="ourteam__profi">Frontend Developer</p>
-                            <ul class="ourteam__soc-list list">
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a></li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="./img/player_2.jpg 1x,
+                                                               ./img/player_2-2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/player_2-tab.jpg 1x,
+                                                               ./img/player_2-tab-2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/player_2-mob.jpg 1x,
+                                                               ./img/player_2-mob-2x.jpg 2x" media="(min-width:480px)">
+                            <img srcset="./img/player_2.jpg 1x, 
+                                                              ./img/player_2-2x.jpg 2x" src="./img/player_2.jpg"
+                                alt="Член команди" width="270">
+                        </picture>
+                        <h3 class="ourteam__name">Ольга Рєпіна</h3>
+                        <p class="ourteam__profi">Frontend Developer</p>
+                        <ul class="ourteam__soc-list list">
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a></li>
+                        </ul>
                     </li>
                     <li class="ourteam__card">
-                        <img src="./img/player_3.jpg" alt="Член команди" width="270" height="260" />
-                        <div class="container">
-                            <h3 class="ourteam__name">Микола Тарасов</h3>
-                            <p class="ourteam__profi">Marketing</p>
-                            <ul class="ourteam__soc-list list">
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a></li>
-                                <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a></li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="./img/player_3.jpg 1x,
+                                                               ./img/player_3-2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/player_3-tab.jpg 1x,
+                                                               ./img/player_3-tab-2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/player_3-mob.jpg 1x,
+                                                               ./img/player_3-mob-2x.jpg 2x" media="(min-width:480px)">
+                            <img srcset="./img/player_3.jpg 1x, 
+                                                              ./img/player_3-2x.jpg 2x" src="./img/player_3.jpg"
+                                alt="Член команди" width="270">
+                        </picture>
+                        <h3 class="ourteam__name">Микола Тарасов</h3>
+                        <p class="ourteam__profi">Marketing</p>
+                        <ul class="ourteam__soc-list list">
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="ourteam__soc-items"><a href="" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a></li>
+                        </ul>
                     </li>
                     <li class="ourteam__card">
-                        <img src="./img/player_4.jpg" alt="Член команди" width="270" height="260" />
-                        <div class="container">
-                            <h3 class="ourteam__name">Михайло Єрмаков</h3>
-                            <p class="ourteam__profi">UI Designer</p>
-                            <ul class="ourteam__soc-list list">
-                                <li class="ourteam__soc-items">
-                                    <a href="#" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="ourteam__soc-items">
-                                    <a href="#" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="ourteam__soc-items">
-                                    <a href="#" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="ourteam__soc-items">
-                                    <a href="#" class="ourteam__soc-links link">
-                                        <svg width="20" height="20" class="ourteam__soc-icons">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="./img/player_4.jpg 1x,
+                                                               ./img/player_4-2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/player_4-tab.jpg 1x,
+                                                               ./img/player_4-tab-2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/player_4-mob.jpg 1x,
+                                                               ./img/player_4-mob-2x.jpg 2x" media="(min-width:480px)">
+                            <img srcset="./img/player_4.jpg 1x, 
+                                                              ./img/player_4-2x.jpg 2x" src="./img/player_4.jpg"
+                                alt="Член команди" width="270">
+                        </picture>
+                        <h3 class="ourteam__name">Михайло Єрмаков</h3>
+                        <p class="ourteam__profi">UI Designer</p>
+                        <ul class="ourteam__soc-list list">
+                            <li class="ourteam__soc-items">
+                                <a href="#" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ourteam__soc-items">
+                                <a href="#" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ourteam__soc-items">
+                                <a href="#" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ourteam__soc-items">
+                                <a href="#" class="ourteam__soc-links link">
+                                    <svg width="20" height="20" class="ourteam__soc-icons">
+                                        <use href="./img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

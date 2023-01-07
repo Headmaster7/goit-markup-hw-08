@@ -1,4 +1,10 @@
 .ourjob {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+
     & .container {
         padding-bottom: 94px;
     }
