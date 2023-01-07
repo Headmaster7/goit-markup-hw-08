@@ -1,31 +1,62 @@
 .hero {
+    max-width: 480px;
+    height: 400px;
+    padding: 118px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--backhero-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../img/hero-fon.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(..//../img/hero-fon-mob.jpg);
 
-    & .container {
-        display: flex;
-        padding: 200px 15px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    @include retina {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(..//../img/hero-fon-mob-2x.jpg);
     }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include tablet {
+        max-width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(..//../img/hero-fon-tab.jpg);
+
+        @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(..//../img/hero-fon-tab-2x.jpg);
+        }
+    }
+
+    @include desktop {
+        max-width: 1600px;
+        height: 600px;
+        padding: 200px 0px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(..//../img/hero-fon.jpg);
+
+        @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(..//../img/hero-fon-2x.jpg);
+        }
+    }
+
 
     &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: calc(60 / 44);
+        font-size: 26px;
+        line-height: calc(42 / 26);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        width: 696px;
         margin-bottom: 30px;
         color: var(--second-color);
+
+        @include desktop {
+            font-size: 44px;
+            line-height: calc(60 / 44);
+        }
     }
 
     &__btn {
