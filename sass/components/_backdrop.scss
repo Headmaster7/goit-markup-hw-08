@@ -14,8 +14,6 @@
 
 .modal {
     position: absolute;
-    top: 95;
-    left: 50%;
     width: calc(100% - 2 * 15px);
 
     @include tel {
@@ -23,7 +21,9 @@
         width: 450px;
     }
 
-    @include tablet {}
+    @include tablet {
+        top: 45%;
+    }
 
     @include desktop {
         top: 50%;

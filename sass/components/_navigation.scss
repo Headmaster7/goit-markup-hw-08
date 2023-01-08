@@ -1,17 +1,17 @@
 .header-nav {
-    display: none;
+    display: flex;
 
-    @include tablet {
-        display: flex;
-    }
+    // @include tablet {
+    //     display: flex;
+    // }
 
-    &__list {
-        display: flex;
-    }
+    // &__list {
+    //     display: flex;
+    // }
 
-    &__items:not(:last-child) {
-        margin-right: 50px;
-    }
+    // &__items:not(:last-child) {
+    //     margin-right: 50px;
+    // }
 }
 
 .header-nav__links {
