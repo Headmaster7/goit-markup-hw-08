@@ -139,14 +139,19 @@ body {
   letter-spacing: 0.03em;
   display: block;
   padding: 24px 0 25px 0;
-  margin-right: 93px;
   color: var(--link-color);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 80px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-right: 93px;
   }
 }
 .logo__header-part {
@@ -157,6 +162,14 @@ body {
 }
 
 .header-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
+}
+.header-nav__list {
   display: flex;
 }
 
@@ -187,6 +200,16 @@ body {
   border-radius: 2px;
 }
 
+.header-nav__list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav__list {
+    margin-right: 74px;
+  }
+}
+
 .current {
   color: var(--current-color);
 }
@@ -196,6 +219,22 @@ body {
   margin: 0px;
   padding-left: 0px;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .header-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .header-contact__email {
   margin-bottom: 10px;

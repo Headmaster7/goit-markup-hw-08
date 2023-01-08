@@ -1,17 +1,15 @@
 .header-nav {
-    display: flex;
+    display: none;
 
-    // @include tablet {
-    //     display: flex;
-    // }
+    @include tablet {
+        display: flex;
+    }
 
-    // &__list {
-    //     display: flex;
-    // }
+    &__list {
+        display: flex;
+    }
 
-    // &__items:not(:last-child) {
-    //     margin-right: 50px;
-    // }
+
 }
 
 .header-nav__links {
@@ -42,6 +40,16 @@
         height: 4px;
         background-color: var(--accent-color);
         border-radius: 2px;
+    }
+}
+
+.header-nav__list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-nav__list {
+    @include tablet {
+        margin-right: 74px;
     }
 }
 

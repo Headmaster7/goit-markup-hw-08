@@ -1,20 +1,19 @@
 .header-contact {
     display: none;
 
-    // @include tablet {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     align-items: center;
-    //     margin-left: 92px;
-    //     padding-top: 21px;
-    //     padding-bottom: 21px;
-    // }
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
 
-    // @include desktop {
-    //     margin-left: auto;
-    //     padding-top: 32px;
-    //     padding-bottom: 32px;
-    // }
+    @include desktop {
+        margin-left: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 
     margin: 0px;
     padding-left: 0px;

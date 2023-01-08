@@ -7,13 +7,17 @@
     letter-spacing: 0.03em;
     display: block;
     padding: 24px 0 25px 0;
-    margin-right: 93px;
     color: var(--link-color);
+
+    @include tablet {
+        margin-right: 80px;
+    }
 
     @include desktop {
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        margin-right: 93px;
     }
 
     &__header-part {
