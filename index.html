@@ -20,13 +20,13 @@
     <header class="header">
         <div class="container">
             <a href="./index.html" class="logo link">Web<span class="logo__header-part">Studio</span></a>
-            <button type="button" class="menu-open">
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu" class="menu-open js-open-menu">
                 <svg width="40" height="40">
                     <use href="./img/icons.svg#icon-menu-mob"></use>
                 </svg>
             </button>
-            <!-- <div class="menu-container">
-                <button type="button" class="menu-close">
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-close js-close-menu">
                     <svg width="40" height="40">
                         <use href="./img/icons.svg#icon-close-mob"></use>
                     </svg>
@@ -64,7 +64,7 @@
                         </li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
             <nav class="header-nav">
                 <ul class="header-nav__list list">
                     <li><a href="./index.html" class="header-nav__links link current">Студія</a></li>
