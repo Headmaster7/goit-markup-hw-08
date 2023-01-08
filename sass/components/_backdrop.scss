@@ -7,13 +7,13 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 350ms linear, visibility 350ms linear;
 
-    &.is-hidden .modal {
-        transform: translate(-50%, -50%) scaleY(0);
-    }
+
 }
 
 .modal {
     position: absolute;
+    top: 95px;
+    left: 50%;
     width: calc(100% - 2 * 15px);
 
     @include tel {
