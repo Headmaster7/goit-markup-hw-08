@@ -6,13 +6,11 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 350ms linear, visibility 350ms linear;
-
-
 }
 
 .modal {
     position: absolute;
-    top: 95px;
+    top: 45%;
     left: 50%;
     width: calc(100% - 2 * 15px);
 
@@ -22,7 +20,7 @@
     }
 
     @include tablet {
-        top: 45%;
+        top: 53%;
     }
 
     @include desktop {

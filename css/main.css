@@ -86,80 +86,48 @@ body {
 }
 
 .header {
-  background: var(--second-color);
-  border-bottom: 1px solid var(--headerline-color);
+  min-height: 60px;
+  border-bottom: 1px solid #ececec;
 }
+.header__logo {
+  display: block;
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    height: 80px;
+    padding: 26px 0px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
+
 .header .container {
   display: flex;
   align-items: center;
 }
-.header__list {
-  display: flex;
-}
-.header__links {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  padding: 32px 0;
-  color: var(--heads-color);
-}
-.header__list li:not(:last-child) {
-  margin-right: 50px;
-}
-.header__links:hover, .header__links:focus {
-  position: relative;
-  color: var(--link-color);
-}
-.header__links:hover::after, .header__links:focus::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  left: 0px;
-  bottom: 0px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-.header__links.current {
-  position: relative;
-  color: var(--current-color);
-}
-.header__links.current::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  left: 0px;
-  bottom: 0px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-.header__contact {
-  display: flex;
+
+.menu-open {
+  border: 0;
+  background-color: transparent;
+  background-color: aquamarine;
   margin-left: auto;
-}
-.header__email, .header__tel {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  padding: 32px 0;
-  color: var(--grey-color);
-}
-.header__email:hover, .header__email:focus, .header__tel:hover, .header__tel:focus {
-  color: var(--link-color);
-}
-.header__email {
-  margin-right: 40px;
-}
-.header__icon {
-  fill: currentColor;
   margin-right: 10px;
+  cursor: pointer;
+}
+.menu-open:hover, .menu-open:focus {
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .logo {
@@ -186,6 +154,86 @@ body {
 }
 .logo__footer-part {
   color: var(--second-color);
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav__links {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--heads-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav__links:hover, .header-nav__links:focus {
+  color: var(--accent-color);
+}
+.header-nav__links.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.current {
+  color: var(--current-color);
+}
+
+.header-contact {
+  display: none;
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+.header-contact__email {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__email {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+.header-contact__email, .header-contact__tel {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact__email:hover, .header-contact__email:focus, .header-contact__tel:hover, .header-contact__tel:focus {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__email, .header-contact__tel {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
+.header-contact__icon {
+  margin-right: 8px;
+  fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__icon {
+    margin-right: 10px;
+  }
 }
 
 .hero {
@@ -821,13 +869,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 350ms linear, visibility 350ms linear;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
-}
 
 .modal {
   position: absolute;
-  top: 95;
+  top: 45%;
   left: 50%;
   width: calc(100% - 30px);
   transform: translate(-50%, -50%) scaleY(1);
@@ -841,6 +886,11 @@ body {
   .modal {
     height: 609px;
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 53%;
   }
 }
 @media screen and (min-width: 1200px) {
