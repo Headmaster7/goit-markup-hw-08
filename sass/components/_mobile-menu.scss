@@ -17,8 +17,6 @@
         display: none;
     }
 
-    display: none;
-
 
 }
 
@@ -60,9 +58,11 @@
 
 .mobile-navigation__link {
     font-weight: 500;
-    @include font(40, 1.18, 0.02);
+    font-size: 40px;
+    line-height: calc(48 / 40);
+    letter-spacing: 0.02em;
     color: var(--heads-color);
-    @extend %link;
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -73,7 +73,8 @@
 .mobile-connection {
     padding-left: 40px;
     padding-bottom: 64px;
-    @extend %list;
+    margin: 0px;
+    list-style: none;
 
     &__item:not(:last-child) {
         margin-bottom: 32px;
@@ -81,16 +82,20 @@
 
     &__tel {
         font-weight: 500;
-        @include font(34, 1.18, 0.02);
+        font-size: 34px;
+        line-height: calc(40 / 34);
+        letter-spacing: 0.02em;
         color: var(--accent-color);
-        @extend %link;
+        text-decoration: none;
     }
 
     &__mail {
         font-weight: 500;
-        @include font(24, 1.17, 0.02);
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: 0.02em;
         color: var(--grey-color);
-        @extend %link;
+        text-decoration: none;
     }
 }
 
@@ -99,7 +104,8 @@
     flex-wrap: wrap;
     padding-left: 40px;
     padding-bottom: 48px;
-    @extend %list;
+    margin: 0px;
+    list-style: none;
 }
 
 .mobile-social__item {
@@ -124,9 +130,11 @@
 
 .mobile-social__link {
     font-weight: 500;
-    @include font(18, 1.22, 0.02);
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
     color: var(--accent-color);
-    @extend %link;
+    text-decoration: none;
 }
 
 .mobile-current {
