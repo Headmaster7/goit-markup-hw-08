@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 222;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,6 +16,8 @@
     @include tablet {
         display: none;
     }
+
+
 }
 
 .menu-container.is-open {
@@ -26,7 +28,9 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    @include flex();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -44,7 +48,8 @@
 .mobile-navigation__list {
     padding-top: 48px;
     padding-left: 40px;
-    @extend %list;
+    margin: 0px;
+    list-style: none;
 }
 
 .mobile-navigation__items:not(:last-child) {
